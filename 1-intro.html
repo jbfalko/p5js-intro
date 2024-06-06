@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+        <style>
+            .k50p{
+               width:49%;
+               float: left;     
+            }            
+        </style>
+                    
+    </head>
+    <body>
+        <h1>Introduktion til p5.js</h1>
+
+        <div class="k50p">
+            <p>I introduktionen skal I lave en lille interaktiv tegning med i med javascript og biblioteket p5.js, som gør det let at programmere animationer, bruge webcam m.m. </p>
+            <p>Sketch'es med p5.js bruger typisk to funktioner:</p>
+                <ul>
+                    <li><b><code>`setup(){}`</code></b> kører fra start. Her indstilles størrelse, hastighed m.m.
+                    </li><li><b><code>`draw(){}`</code></b> kører som standard 60 gange i sekundet. Her tegnes figurer.</li>
+                </li></ul>
+            <h2>Setup-funktioner</h2>
+                <ul>
+                    <li><b><code>`createCanvas(bredde, højde)`</code></b> opretter lærrede ud fra to parametre for hhv. højde og bredde
+                    </li><li><b><code>`frameRate(antal)`</code></b> antal gange per sekund draw() afvikles - standard er 60, men 24 er nok til at skabe animation.
+                    </li><li><b><code>`background(r,g,b)`</code></b> tegner farvet firkant i lærredets højde og bredde - dækker for andre figurer, hvis den ikke står først. 
+                    </li><li><b><code>`windowWidth`</code></b> returnerer det aktuelle vindues bredde
+                    </li><li><b><code>`windowHeight`</code></b> returnerer det aktuelle vindues højde
+                </li></ul>
+            <h2> Opgaver</h2>
+            <ol>
+                <li><em>Ændr canvas højde, så hele vinduet dækkes.
+                </li><li>Flyt background(100) ned i draw(), så gammel figur skjules.
+                </li><li>Prøv at sætte frameRate ned - hvad sker der?
+                </li><li>Ændre farven i background til eks. rød!
+        </div>
+        <div class="k50p">
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>

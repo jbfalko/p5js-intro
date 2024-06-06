@@ -4,7 +4,7 @@ var figurStr = 20;
 
 function setup() {
   frameRate(60);
-  createCanvas(windowWidth, 300);
+  createCanvas(windowWidth/2, 300);
   background(100);
 }
 
